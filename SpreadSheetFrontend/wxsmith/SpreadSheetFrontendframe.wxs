@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="SpreadSheetFrontendFrame">
+		<id_arg>0</id_arg>
+		<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+			<cols>702</cols>
+			<rows>1000</rows>
+			<pos>120,128</pos>
+			<handler function="OnGrid1CellChange" entry="EVT_CMD_GRID_CELL_CHANGED" />
+			<handler function="OnGrid1CellSelect" entry="EVT_CMD_GRID_SELECT_CELL" />
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>Файл</label>
+				<object class="wxMenuItem" name="idMenuNew" variable="MenuItem7" member="yes">
+					<label>Новая таблица</label>
+					<accel>Ctrl-N</accel>
+					<help>Создание новой таблицы</help>
+					<handler function="OnMenuNewSelected" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuLoad" variable="MenuItem3" member="yes">
+					<label>Открыть</label>
+					<accel>Ctrl-O</accel>
+					<help>Загрузка таблицы из файла</help>
+					<handler function="OnMenuLoadSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuSave" variable="MenuItem5" member="yes">
+					<label>Сохранить</label>
+					<accel>Ctrl-S</accel>
+					<help>Сохранение таблицы в файл</help>
+					<handler function="OnMenuSaveSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuSaveAs" variable="MenuItem4" member="yes">
+					<label>Сохранить как</label>
+					<help>Сохранить таблицу в файл под другим именем</help>
+					<handler function="OnMenuSaveAsSelected" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Выход</label>
+					<accel>Alt-F4</accel>
+					<help>Покинуть программу</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Помощь</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>О программе</label>
+					<accel>F1</accel>
+					<help>Информация о программе</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>3</fields>
+			<widths>-1,-1,60</widths>
+			<styles>wxSB_NORMAL,wxSB_NORMAL,wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
