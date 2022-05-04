@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpreadSheet" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpreadSheet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpreadSheet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++17" />
+			<Add option="-fexceptions" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-Wno-unused-local-typedefs" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DWX_PRECOMP" />
+			<Add option="-DANTLR4CPP_STATIC" />
+			<Add directory="antlr4_runtime/runtime/src" />
+		</Compiler>
+		<Linker>
+			<Add option="libantlr4-runtime.a" />
+		</Linker>
+		<Unit filename="FormulaAST.cpp" />
+		<Unit filename="FormulaAST.h" />
+		<Unit filename="FormulaBaseListener.cpp" />
+		<Unit filename="FormulaBaseListener.h" />
+		<Unit filename="FormulaLexer.cpp" />
+		<Unit filename="FormulaLexer.h" />
+		<Unit filename="FormulaListener.cpp" />
+		<Unit filename="FormulaListener.h" />
+		<Unit filename="FormulaParser.cpp" />
+		<Unit filename="FormulaParser.h" />
+		<Unit filename="cell.cpp" />
+		<Unit filename="cell.h" />
+		<Unit filename="common.h" />
+		<Unit filename="formula.cpp" />
+		<Unit filename="formula.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sheet.cpp" />
+		<Unit filename="sheet.h" />
+		<Unit filename="structures.cpp" />
+		<Unit filename="test_runner_p.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
